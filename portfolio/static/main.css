@@ -1,12 +1,57 @@
-body{
+body {
     background: #090909;
+    padding-top: 80px;
 }
 
 .bg-black {
-    background: #090909;
+    background: #000;
 }
 
 .card-project:hover {
-    border: 1px solid #ffff;
+    border: 1px solid #eee;
     cursor: pointer;
 }
+
+
+.navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #c7b40b;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .navbar-brand:before,
+  .navbar-brand:after {
+    content: "GPRADINETT";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .navbar-brand:before {
+    color: #E74C3C;
+    animation: clip-text 2s linear forwards;
+  }
+  
+  .navbar-brand:after {
+    color: #c62727;
+    animation: clip-text 2s linear forwards 1s;
+  }
+  
+  @keyframes clip-text {
+    from {
+      clip-path: inset(0 100% 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
