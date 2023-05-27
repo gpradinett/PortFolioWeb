@@ -2,7 +2,7 @@
 {% block content %}
 
 <h1 class="fs-2">Posts</h1>
-<h3>There are {{total_posts}} post{{total_posts|pluralize}}</h3>
+<h3>There are {{total_post}} post{{total_post|pluralize}}</h3>
 
 {% for post in posts %}
 
@@ -18,16 +18,12 @@
                 <h2>{{post.title}}</h2>
                 <p>{{post.description |striptags|truncatechars:100  }}</p>
                 <p>{{post.data|date:'M d Y'|upper}}</p>
-               
-                
-                <a href="{% url 'blog:post_detail' post.id %}" class="btn btn-primary">{{post.title}}</a>
-    
+                              
+                <p></p>
+                <a href="{% url 'blog:post_detail' post.id %}" class="btn btn-primary ">{{post.title}}</a>
+    <p></p>
             </div>
         </div>
-        
-    
-    
-    
     </div>
 </div>
 

@@ -1,10 +1,24 @@
+
+
 body {
     background: #090909;
     padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 90px;
+
+}
+
+
+
+footer {
+  margin-top: auto;
+  background: #000000;
 }
 
 .bg-black {
-    background: #000;
+    background: #675757;
 }
 
 .card-project:hover {

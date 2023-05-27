@@ -10,10 +10,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
+            <a class="nav-link" href="/generator/">Generador de contraseña</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/download/">Download</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="{% url 'blog:post' %}">Blog</a>
           </li>
           <li class="nav-item d-flex align-items-center">
-            <a class="btn btn-primary btn-sm" href="{% static 'porfolio/Fernando Gonzales - CV.pdf'%}" target="_blank">Download CV</a>
+            <a class="btn btn-outline-secondary" href="{% static 'porfolio/Fernando Gonzales - CV.pdf'%}" target="_blank">Download CV</a>
           </li>
         </ul>
       </div>

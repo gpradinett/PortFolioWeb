@@ -21,11 +21,16 @@ from django.conf import settings
 
 
 from portfolio import views
+from generator.views import generator, password
+from download.views import download
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('blog/', include('blog.urls')),
+    path('generator/', generator, name='generator'),
+    path('generator_password', password, name='generator_password'),
+    path('download/', download, name='download'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
