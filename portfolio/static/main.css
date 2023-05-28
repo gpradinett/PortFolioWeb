@@ -1,16 +1,24 @@
 
 
 body {
-    background: #090909;
+    background: url("porfolio/bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
     padding-top: 80px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: 90px;
+    animation: animateBg 5s linear infinite;
 
 }
 
 
+
+@keyframes animateBg {
+  100% {
+      filter: hue-rotate(360deg);
+  }
+}
 
 footer {
   margin-top: auto;
