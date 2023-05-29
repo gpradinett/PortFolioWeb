@@ -6,11 +6,11 @@
 
         <form action="{% url 'generator_password' %}" class="card card-body p-5 bg-black" >
 
-        <h4 class="text-center text-success">Genera tu nueva contraseña</h4>
+        <h1 class="text-center text-success">Genera tu nueva contraseña</h1>
 
         <label for="uppercase" class="text-center text-success">N° de Caracteres</label>
         <p></p>
-        <select name="length" id="length" class="form-control">
+        <select name="length" id="length" class="form-control" style="background-color: rgb(56, 55, 55);">
             <option value="6">6 Caracteres</option>
             <option value="7">7 Caracteres</option>
             <option value="8">8 Caracteres</option>
@@ -22,7 +22,7 @@
         </select>
 
         <p></p>
-        <div class="form-check form-switch my-2">
+        <div class="form-check form-switch my-2" >
             <label for="uppercase" class="form-check-label">Incluir Mayusculas</label>
             <input type="checkbox" name="uppercase" id="uppercase" class="form-check-input"/>
         </div>

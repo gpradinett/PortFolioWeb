@@ -6,10 +6,28 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    animation: animateBg 5s linear infinite;
+   
+}
+
+
+h1 {
+  color: blue;
+
+  animation: animateBg 5s linear infinite;
 
 }
 
+button{
+  color: blue;
+
+  animation: animateBg 5s linear infinite;
+}
+
+a {
+  color: blue;
+
+  animation: animateBg 5s linear infinite;
+}
 
 
 @keyframes animateBg {
@@ -21,6 +39,8 @@ body {
 footer {
   margin-top: auto;
   background: #000000;
+
+
 }
 
 .bg-black {
@@ -43,6 +63,9 @@ footer {
     letter-spacing: 2px;
     display: inline-block;
     position: relative;
+    animation: animateBg 5s linear infinite;
+
+
   }
   
   .navbar-brand:before,
@@ -55,16 +78,19 @@ footer {
     bottom: 0;
     z-index: -1;
     overflow: hidden;
+    animation: animateBg 5s linear infinite;
   }
   
   .navbar-brand:before {
     color: #E74C3C;
     animation: clip-text 2s linear forwards;
+    animation: animateBg 5s linear infinite;
   }
   
   .navbar-brand:after {
     color: #c62727;
     animation: clip-text 2s linear forwards 1s;
+    animation: animateBg 5s linear infinite;
   }
   
   @keyframes clip-text {
@@ -75,3 +101,11 @@ footer {
       clip-path: inset(0 0 0 0);
     }
   }
+
+
+
+
+
+
+
+  

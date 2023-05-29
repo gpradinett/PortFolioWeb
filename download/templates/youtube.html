@@ -8,10 +8,11 @@
 
   <form class="card card-body p-5 bg-black" method="POST">
     {% csrf_token %}
-    <h4 class="text-center text-success">Download</h4>
-  
-    <select class="form-select" aria-label="Default select example" name="option">
-      <option selected disabled>Elije una opción</option>
+    <p></p>
+    <h1 class="text-center text-success">Download</h1>
+    <p></p>
+    <select class="form-select" aria-label="Default select example" name="option"  style="background-color: rgb(56, 55, 55);">
+      <option selected disabled >Elije una opción</option>
       <option value="1">YouTube</option>
       <option value="2">TikTok</option>
       <option value="3">Instagram</option>
@@ -20,12 +21,13 @@
     <p></p>
   
     <div class="input-group mb-3">
-      <input type="text" class="form-control" name="url" id="input-url" placeholder="Pega aquí la URL" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <input type="text" class="form-control" name="url" id="input-url" placeholder="Pega aquí la URL" aria-label="Recipient's username" aria-describedby="button-addon2" style="background-color: rgb(56, 55, 55);">
+    <p></p>
       <button class="btn btn-outline-secondary" type="button" id="button-addon2">Pegar</button>
     </div>
-  
+    <p></p>
     <div class="d-grid gap-2">
-      <button type="submit" class="btn btn-outline-secondary">Download</button>
+      <button type="submit" class="btn btn-primary">Download</button>
     </div>
   </form>
 </div>
