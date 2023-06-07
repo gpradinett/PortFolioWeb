@@ -16,11 +16,11 @@
         <h1> I am <strong> Fernando Gonzales </strong></h1>
         <h3> I am Python FullStack Developer</h3>
         <p></p>
-        <p> Soy un apasionado ingeniero de software y un desarrollador. Mi enfoque en el desarrollo de software está impulsado por mi pasión por la creación de soluciones efectivas y eficientes para problemas prácticos. Me considero un apasionado del código limpio, el trabajo bien estructurado y la atención al detalle.
+        <p>I am a passionate software engineer and developer. My approach to software development is driven by my passion for creating effective and efficient solutions to practical problems. I consider myself passionate about clean code, well-structured work, and attention to detail.
             
-            Siempre estoy buscando nuevas oportunidades emocionantes para desarrollar mi carrera en ingeniería de software, y estoy ansioso por conectarme con otros profesionales de la industria y explorar nuevas posibilidades.
+            I am always looking for exciting new opportunities to further my career in software engineering, and I am eager to connect with other professionals in the industry and explore new possibilities.
             
-        <p> ¡Gracias por darte una vuelta por aqui!</p>
+        <p> ¡Thanks for stopping by here!</p>
         </p>
       <!--  <a href="{% static 'porfolio/Fernando GonzalesP-CV.pdf' %}" class="btn btn-primary rounded-0 my-3">Dowload CV</a>-->
     </div>
@@ -30,34 +30,63 @@
 
 <div class="row my-4 text-center">
     <p></p>
-    <h3> Mis Proyectos </h3>
+    <h3> My projects </h3>
     <p></p>
-    <p>"En esta sección encontrarás una selección de mis proyectos más recientes y destacados. Espero que disfrutes explorando esta sección y descubriendo el valor que puedo aportar a tu empresa o proyecto."</p>
+    <p>"In this section you will find a selection of my most recent and outstanding projects. I hope you enjoy exploring this section and discovering the value that I can bring to your company or project."</p>
     <p></p>
 
-    {% for project in projects %}
 
     <div class="col-md-4 p-4">
         <div class="card bg-black card-project">
-            <img src="{{project.image.url}}" class="card-img-top" >
+            <img src="{% static 'porfolio/imageProyectos/image.png' %}" class="card-img-top" >
         <p></p>
             <div class="card-body text-light">
 
-            <h3 style="color: rgb(5, 54, 167);">{{ project.title }}</h3>
-            <p>{{ project.description }}</p>
+            <h3 style="color: rgb(5, 54, 167);">AirBnB Clone - The Console</h3>
+            <p>The console is the first segment of the AirBnB project at Holberton School that will collectively cover fundamental concepts of higher level programming. The goal of AirBnB project is to eventually</p>
         
     
-            {% if project.url %}
             
-            <a href="{{project.url}}" class="btn btn-primary target="_blank" rel="noreferrer">Visit the Project</a>
-
-            {% endif %}
+            <a href="https://github.com/JSM788/holbertonschool-AirBnB_clone_v3" class="btn btn-primary target="_blank" rel="noreferrer">Visit the Project</a>
 
             </div>
         </div>
     </div>
 
-    {% endfor %}
+    <div class="col-md-4 p-4">
+        <div class="card bg-black card-project">
+            <img src="{% static 'porfolio/imageProyectos/image2.png' %}" class="card-img-top" >
+        <p></p>
+            <div class="card-body text-light">
+
+            <h3 style="color: rgb(5, 54, 167);">GBS</h3>
+            <p>Condominium and Building Management System</p>
+        
+    
+            
+            <a href="https://github.com/GerardoMP18/web-condominio-edificio-backend" class="btn btn-primary target="_blank" rel="noreferrer">Visit the Project</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 p-4">
+        <div class="card bg-black card-project">
+            <img src="{% static 'porfolio/imageProyectos/image1.png' %}" class="card-img-top" >
+        <p></p>
+            <div class="card-body text-light">
+
+            <h3 style="color: rgb(5, 54, 167);">Eventicks</h3>
+            <p>This is a project for online event management. It allows users to create, edit, and delete events, and attendees to register to participate. The project is developed in JavaScript, using React for the user interface.</p>
+        
+    
+            
+            <a href="https://github.com/paolo-abarca/Eventicks" class="btn btn-primary target="_blank" rel="noreferrer">Visit the Project</a>
+
+            </div>
+        </div>
+    </div>
+
 </div>
 
 {% endblock %}
