@@ -2,8 +2,6 @@
 # exit on error
 set -o errexit
 
-sudo apt-get install -y expect
-
 pip install --upgrade pip
 pip install -r requirements.txt
 
