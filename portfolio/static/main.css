@@ -105,19 +105,5 @@ footer {
 
 
 
-  .banner-animation {
-    display: inline-block;
-    animation: banner-scroll 15s linear infinite;
-  }
-  
-  @keyframes banner-scroll {
-    0% {
-      transform: translateX(200%);
-    }
-    100% {
-      transform: translateX(-00%);
-    }
-  }
-
 
   
