@@ -72,8 +72,8 @@ footer {
   .navbar-brand:after {
     content: "GPRADINETT";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 1;
+    left: 1;
     right: 0;
     bottom: 0;
     z-index: -1;
@@ -105,7 +105,19 @@ footer {
 
 
 
-
+  .banner-animation {
+    display: inline-block;
+    animation: banner-scroll 15s linear infinite;
+  }
+  
+  @keyframes banner-scroll {
+    0% {
+      transform: translateX(200%);
+    }
+    100% {
+      transform: translateX(-00%);
+    }
+  }
 
 
   

@@ -23,8 +23,12 @@
     <div class="input-group mb-3">
       <input type="text" class="form-control" name="url" id="input-url" placeholder="Paste the video URL here" aria-label="Recipient's username" aria-describedby="button-addon2" style="background-color: rgb(56, 55, 55);">
     <p></p>
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Paste</button>
+
+    <div id="liveAlertPlaceholder"></div>
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2" >Paste</button>
+
     </div>
+
     <p></p>
     <div class="d-grid gap-2">
       <button type="submit" class="btn btn-primary">Download</button>
@@ -32,6 +36,29 @@
   </form>
 </div>
 
+
+
+<script>
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('button-addon2')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('Nice, you triggered this confirmation message!', 'success')
+  })
+}
+</script>
 
 
 
